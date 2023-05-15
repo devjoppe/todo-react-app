@@ -22,7 +22,7 @@ const TodoItem:React.FC<todoListProps> = ({todoList}) => {
                     </td>
                     <td>{todo.completed ? "Completed" : "In progress"}</td>
                     <td>
-                        <button className="btn btn-danger">Delete</button>
+                        <button className="btn btn-danger mr-2">Delete</button>
                         <button className="btn btn-success">Finished</button>
                     </td>
                 </tr>
