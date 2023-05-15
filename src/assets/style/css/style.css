@@ -1,1 +1,7 @@
-body{background-color:red}
+.app-container {
+    height: 100vh;
+    width: 100%;
+}
+.complete {
+    text-decoration: line-through;
+}
