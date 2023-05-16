@@ -31,21 +31,21 @@
     {
       "id": "lhoyjtbs",
       "todo": "Testar en ny på svenska",
-      "completed": false,
+      "completed": true,
       "userId": 123,
       "type": "Personal"
     },
     {
       "id": "lhoyl67v",
       "todo": "Skapar en ny",
-      "completed": true,
+      "completed": false,
       "userId": 123,
       "type": "Personal"
     },
     {
       "id": "lhoylitz",
       "todo": "Vad är detta?",
-      "completed": true,
+      "completed": false,
       "userId": 123,
       "type": "Personal"
     },
@@ -73,7 +73,7 @@
     {
       "id": "lhoyo6ww",
       "todo": "asdadqwds",
-      "completed": false,
+      "completed": true,
       "userId": 123,
       "type": "Work"
     },
@@ -83,6 +83,13 @@
       "completed": false,
       "userId": 123,
       "type": "Personal"
+    },
+    {
+      "id": "lhq6is6k",
+      "todo": "Adding one more for good measure",
+      "completed": false,
+      "userId": 123,
+      "type": "Work"
     }
   ]
 }
