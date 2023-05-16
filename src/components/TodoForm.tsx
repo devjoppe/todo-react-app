@@ -10,6 +10,7 @@ import {todoItem} from "../interface/todo.tsx";
 
 // React
 import {useCallback, useEffect, useState} from "react";
+import TodoFilter from "./TodoFilter.tsx";
 
 const TodoForm = () => {
 
@@ -18,6 +19,7 @@ const TodoForm = () => {
     // Data handling
     const [error, setError] = useState(null)
     const [isLoading, setIsLoading] = useState(true)
+    const [filterUrl, setFilterUrl] = useState("/todos")
 
     const fetchData = useCallback(async () => {
         console.log("Fetch start...")
@@ -26,7 +28,7 @@ const TodoForm = () => {
         setIsLoading(true)
 
         try{
-            setTodoList(await getTodos())
+            setTodoList(await getTodos(filterUrl))
             setError(null)
         } catch (err:any) {
             setError(err.message)
@@ -35,7 +37,7 @@ const TodoForm = () => {
             setIsLoading(false)
             console.log("Fetch completed")
         }
-    }, [])
+    }, [filterUrl])
 
     useEffect(() => {
         fetchData().then(() => {
@@ -50,13 +52,18 @@ const TodoForm = () => {
         })
     }
 
+    const addFilterUrl = (url:string) => {
+        setFilterUrl(url)
+    }
+
     return(
-        <div>
+        <div className="col-8">
             <TodoInput updateList={updateList} />
+            <TodoFilter addFilterUrl={addFilterUrl}/>
             <div className="table-wrapper">
                 {isLoading && <p>Loading...</p>}
                 {error && <p>{error}</p>}
-                <table className="table table-hover table-bordered">
+                <table className="table table-hover table-bordered w-full">
                     <thead>
                     <tr>
                         <th>ID.</th>

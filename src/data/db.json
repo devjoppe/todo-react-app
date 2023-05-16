@@ -1,83 +1,6 @@
 {
   "todos": [
     {
-      "id": 6,
-      "todo": "Bake pastries for me and neighbor",
-      "completed": true,
-      "userId": 39,
-      "type": "Work"
-    },
-    {
-      "id": 9,
-      "todo": "Invite some friends over for a game night",
-      "completed": true,
-      "userId": 47,
-      "type": "Work"
-    },
-    {
-      "id": 10,
-      "todo": "Have a football scrimmage with some friends",
-      "completed": true,
-      "userId": 19,
-      "type": "Personal"
-    },
-    {
-      "id": "lhm4qayg",
-      "todo": "Sparar en ny?",
-      "completed": true,
-      "userId": "lhm4qayh",
-      "type": "Personal"
-    },
-    {
-      "id": "lhohlvp6",
-      "todo": "Sparar en för att testa?",
-      "completed": true,
-      "userId": "lhohlvp7",
-      "type": "Personal"
-    },
-    {
-      "id": "lhohmhb8",
-      "todo": "Laddas sidan om?",
-      "completed": false,
-      "userId": "lhohmhb9",
-      "type": "Personal"
-    },
-    {
-      "id": "lhojf5oh",
-      "todo": "Skapear en ny för att se vad som händer?",
-      "completed": true,
-      "userId": "lhojf5oi",
-      "type": "Personal"
-    },
-    {
-      "id": "lhojhr5s",
-      "todo": "Skriver",
-      "completed": true,
-      "userId": "lhojhr5t",
-      "type": "Personal"
-    },
-    {
-      "id": "lhojo3nz",
-      "todo": "Hej",
-      "completed": false,
-      "userId": "lhojo3o0",
-      "type": "Personal"
-    },
-    {
-      "id": "lhol90tt",
-      "todo": "Skapar?",
-      "completed": false,
-      "userId": "lhol90tu",
-      "type": "Personal"
-    },
-    {
-      "id": "lhol9jts",
-      "todo": "Hej?",
-      "completed": false,
-      "userId": "lhol9jtt",
-      "type": "Personal"
-    },
-    {
       "id": "lholp1m1",
       "todo": "Testar",
       "completed": false,
@@ -87,7 +10,7 @@
     {
       "id": "lhom4vup",
       "todo": "Is it loading?",
-      "completed": true,
+      "completed": false,
       "userId": "lhom4vuq",
       "type": "Personal"
     },
@@ -115,21 +38,21 @@
     {
       "id": "lhoyl67v",
       "todo": "Skapar en ny",
-      "completed": false,
+      "completed": true,
       "userId": 123,
       "type": "Personal"
     },
     {
       "id": "lhoylitz",
       "todo": "Vad är detta?",
-      "completed": false,
+      "completed": true,
       "userId": 123,
       "type": "Personal"
     },
     {
       "id": "lhoymiyi",
       "todo": "Fixar igen",
-      "completed": false,
+      "completed": true,
       "userId": 123,
       "type": "Personal"
     },

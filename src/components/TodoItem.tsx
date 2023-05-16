@@ -45,7 +45,10 @@ const TodoItem:React.FC<todoListProps> = ({todoList, updateList}) => {
                     </td>
                     <td>{todo.completed ? "Completed" : "In progress"}</td>
                     <td>
-                        <button className={`btn mr-2 ${todo.completed ? 'btn-warning' : 'btn-success'}`} onClick={() => {updateTodoItem(todo)}}>
+                        <button className={`btn mr-2 ${todo.completed ? 'btn-warning' : 'btn-success'}`} onClick={(e) => {
+                            e.preventDefault()
+                            updateTodoItem(todo)
+                        }}>
                             {todo.completed ? 'Undo' : 'Finish'}
                         </button>
                         <button className="btn btn-danger" onClick={() => {deleteTodoItem(todo)}}>Delete</button>

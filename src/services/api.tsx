@@ -7,8 +7,8 @@ import {todoItem} from "../interface/todo.tsx";
 const BASE_URL = 'http://localhost:3000'
 
 // Get all Todos
-export const getTodos = async () => {
-    const response = await axios.get(`${BASE_URL}/todos`)
+export const getTodos = async (url:string | null) => {
+    const response = await axios.get(`${BASE_URL}${url}`)
     if(!response) {
         throw new Error(`Error in the request: ${response}`)
     }
@@ -22,8 +22,6 @@ export const saveTodo = async (newTodo:todoItem) => {
         throw new Error(`Error in the post request: ${response}`)
     }
     console.log(response.data)
-    //getTodos().then(() => {console.log("Get new todo list")})
-    //return response.data
 }
 
 // Update Data
