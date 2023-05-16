@@ -34,3 +34,11 @@ export const updateTodo = async (todoItem:todoItem) => {
     }
     console.log(response.data)
 }
+
+export const deleteTodo = async (todoItem:todoItem) => {
+    const response = await  axios.delete(`${BASE_URL}/todos/${todoItem.id}`, {data: todoItem})
+    if(!response) {
+        throw new Error(`Error in the delete request: ${response}`)
+    }
+    console.log(response.data)
+}

@@ -3,23 +3,9 @@
     {
       "id": 6,
       "todo": "Bake pastries for me and neighbor",
-      "completed": false,
+      "completed": true,
       "userId": 39,
       "type": "Work"
-    },
-    {
-      "id": 7,
-      "todo": "Go see a Broadway production",
-      "completed": false,
-      "userId": 32,
-      "type": "Work"
-    },
-    {
-      "id": 8,
-      "todo": "Write a thank you letter to an influential person in my life",
-      "completed": false,
-      "userId": 13,
-      "type": "Personal"
     },
     {
       "id": 9,

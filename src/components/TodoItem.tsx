@@ -5,7 +5,7 @@ import React from "react";
 import {todoItem} from "../interface/todo.tsx";
 
 // Service
-import {updateTodo} from "../services/api.tsx";
+import {updateTodo, deleteTodo} from "../services/api.tsx";
 
 interface todoListProps {
     todoList: todoItem[]
@@ -14,13 +14,21 @@ interface todoListProps {
 
 const TodoItem:React.FC<todoListProps> = ({todoList, updateList}) => {
 
-    // Service -> Axios -> DB
+    // Update: Service -> Axios -> DB
     const updateTodoItem = (todo:todoItem) => {
         todo.completed = !todo.completed
 
         updateTodo(todo).then(() => {
             updateList()
             console.log("Status update complete:", todo)
+        })
+    }
+
+    // Delete: Service -> Axios -> DB, using this solution to have the same pattern through the app
+    const deleteTodoItem = (todo:todoItem) => {
+        deleteTodo(todo).then(() => {
+            updateList()
+            console.log("Delete completed:", todo)
         })
     }
 
@@ -40,7 +48,7 @@ const TodoItem:React.FC<todoListProps> = ({todoList, updateList}) => {
                         <button className={`btn mr-2 ${todo.completed ? 'btn-warning' : 'btn-success'}`} onClick={() => {updateTodoItem(todo)}}>
                             {todo.completed ? 'Undo' : 'Finish'}
                         </button>
-                        <button className="btn btn-danger">Delete</button>
+                        <button className="btn btn-danger" onClick={() => {deleteTodoItem(todo)}}>Delete</button>
                     </td>
                 </tr>
             ))}
