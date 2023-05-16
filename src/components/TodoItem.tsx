@@ -9,6 +9,13 @@ interface todoListProps {
 }
 
 const TodoItem:React.FC<todoListProps> = ({todoList}) => {
+
+    // Service -> Axios -> DB
+    const updateTodo = () => {
+        console.log("Status update complete")
+
+    }
+
     return(
         <>
             {todoList.map(todo => (
@@ -22,8 +29,10 @@ const TodoItem:React.FC<todoListProps> = ({todoList}) => {
                     </td>
                     <td>{todo.completed ? "Completed" : "In progress"}</td>
                     <td>
-                        <button className="btn btn-danger mr-2">Delete</button>
-                        <button className="btn btn-success">Finished</button>
+                        <button className={`btn mr-2 ${todo.completed ? 'btn-warning' : 'btn-success'}`}>
+                            {todo.completed ? 'Undo' : 'Finish'}
+                        </button>
+                        <button className="btn btn-danger">Delete</button>
                     </td>
                 </tr>
             ))}
