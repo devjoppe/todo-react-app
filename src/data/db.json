@@ -38,14 +38,14 @@
     {
       "id": "lhm4qayg",
       "todo": "Sparar en ny?",
-      "completed": false,
+      "completed": true,
       "userId": "lhm4qayh",
       "type": "Personal"
     },
     {
       "id": "lhohlvp6",
       "todo": "Sparar en för att testa?",
-      "completed": false,
+      "completed": true,
       "userId": "lhohlvp7",
       "type": "Personal"
     },

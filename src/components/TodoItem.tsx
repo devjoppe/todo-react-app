@@ -4,16 +4,24 @@ import React from "react";
 // Interface
 import {todoItem} from "../interface/todo.tsx";
 
+// Service
+import {updateTodo} from "../services/api.tsx";
+
 interface todoListProps {
     todoList: todoItem[]
+    updateList: () => void
 }
 
-const TodoItem:React.FC<todoListProps> = ({todoList}) => {
+const TodoItem:React.FC<todoListProps> = ({todoList, updateList}) => {
 
     // Service -> Axios -> DB
-    const updateTodo = () => {
-        console.log("Status update complete")
+    const updateTodoItem = (todo:todoItem) => {
+        todo.completed = !todo.completed
 
+        updateTodo(todo).then(() => {
+            updateList()
+            console.log("Status update complete:", todo)
+        })
     }
 
     return(
@@ -29,7 +37,7 @@ const TodoItem:React.FC<todoListProps> = ({todoList}) => {
                     </td>
                     <td>{todo.completed ? "Completed" : "In progress"}</td>
                     <td>
-                        <button className={`btn mr-2 ${todo.completed ? 'btn-warning' : 'btn-success'}`}>
+                        <button className={`btn mr-2 ${todo.completed ? 'btn-warning' : 'btn-success'}`} onClick={() => {updateTodoItem(todo)}}>
                             {todo.completed ? 'Undo' : 'Finish'}
                         </button>
                         <button className="btn btn-danger">Delete</button>

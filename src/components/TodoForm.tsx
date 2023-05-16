@@ -54,6 +54,8 @@ const TodoForm = () => {
         <div>
             <TodoInput updateList={updateList} />
             <div className="table-wrapper">
+                {isLoading && <p>Loading...</p>}
+                {error && <p>{error}</p>}
                 <table className="table table-hover table-bordered">
                     <thead>
                     <tr>
@@ -65,10 +67,8 @@ const TodoForm = () => {
                     </tr>
                     </thead>
                     <tbody>
-                    {isLoading && <p>Loading...</p>}
-                    {error && <p>{error}</p>}
                     {todoList && !isLoading &&
-                        <TodoItem todoList={todoList} />
+                        <TodoItem todoList={todoList} updateList={updateList} />
                     }
                     </tbody>
                 </table>

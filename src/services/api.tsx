@@ -22,6 +22,15 @@ export const saveTodo = async (newTodo:todoItem) => {
         throw new Error(`Error in the post request: ${response}`)
     }
     console.log(response.data)
-    getTodos().then(() => {console.log("Get new todo list")})
+    //getTodos().then(() => {console.log("Get new todo list")})
     //return response.data
+}
+
+// Update Data
+export const updateTodo = async (todoItem:todoItem) => {
+    const response = await axios.patch(`${BASE_URL}/todos/${todoItem.id}`, todoItem)
+    if(!response) {
+        throw new Error(`Error in the update request: ${response}`)
+    }
+    console.log(response.data)
 }

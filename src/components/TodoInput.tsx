@@ -30,6 +30,7 @@ const TodoInput:React.FC<updateListProp> = ({updateList}) => {
             userId: userId,
             type: selectInput
         }
+
         // Service -> Axios -> DB
         saveTodo(newTodo).then(() => {
             console.log("Save complete")
