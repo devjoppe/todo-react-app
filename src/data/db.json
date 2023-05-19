@@ -1,95 +1,46 @@
 {
   "todos": [
     {
-      "id": "lholp1m1",
-      "todo": "Testar",
-      "completed": false,
-      "userId": "lholp1m2",
-      "type": "Personal"
-    },
-    {
-      "id": "lhom4vup",
-      "todo": "Is it loading?",
-      "completed": false,
-      "userId": "lhom4vuq",
-      "type": "Personal"
-    },
-    {
-      "id": "lhowunrv",
-      "todo": "Vad händer nu?",
-      "completed": false,
-      "userId": 123,
-      "type": "Personal"
-    },
-    {
-      "id": "lhoyjfei",
-      "todo": "Adding one for me",
-      "completed": false,
-      "userId": 123,
-      "type": "Personal"
-    },
-    {
-      "id": "lhoyjtbs",
-      "todo": "Testar en ny på svenska",
-      "completed": true,
-      "userId": 123,
-      "type": "Personal"
-    },
-    {
-      "id": "lhoyl67v",
-      "todo": "Skapar en ny",
-      "completed": false,
-      "userId": 123,
-      "type": "Personal"
-    },
-    {
-      "id": "lhoylitz",
-      "todo": "Vad är detta?",
-      "completed": false,
-      "userId": 123,
-      "type": "Personal"
-    },
-    {
-      "id": "lhoymiyi",
-      "todo": "Fixar igen",
-      "completed": true,
-      "userId": 123,
-      "type": "Personal"
-    },
-    {
-      "id": "lhoyn2vx",
-      "todo": "Lägger till en work",
-      "completed": false,
-      "userId": 123,
-      "type": "Work"
-    },
-    {
-      "id": "lhoyns5u",
-      "todo": "Sdasd",
-      "completed": false,
-      "userId": 123,
-      "type": "Work"
-    },
-    {
-      "id": "lhoyo6ww",
-      "todo": "asdadqwds",
+      "id": "lhu7ymbh",
+      "todo": "Create a new hello app in React",
       "completed": true,
       "userId": 123,
       "type": "Work"
     },
     {
-      "id": "lhpwuz2k",
-      "todo": "Create my todoApp",
+      "id": "lhu7yquc",
+      "todo": "Go out with the dogs",
       "completed": false,
       "userId": 123,
       "type": "Personal"
     },
     {
-      "id": "lhq6is6k",
-      "todo": "Adding one more for good measure",
-      "completed": false,
+      "id": "lhu7z2mc",
+      "todo": "Push changes to Github",
+      "completed": true,
       "userId": 123,
       "type": "Work"
+    },
+    {
+      "id": "lhu7zbxc",
+      "todo": "Make a screenshot",
+      "completed": true,
+      "userId": 123,
+      "type": "Work"
+    },
+    {
+      "id": "lhu7zrov",
+      "todo": "Take the bus to town",
+      "completed": false,
+      "userId": 123,
+      "type": "Personal"
+    },
+    {
+      "id": "lhu7zyrk",
+      "todo": "Get me some new Internet",
+      "completed": false,
+      "userId": 123,
+      "type": "Personal"
     }
   ]
 }
